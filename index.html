@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MN SIDDIK | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">MN SIDDIK</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span>MN SIDDIK</span></h1>
+            <p>I am a Python Developer and Web Enthusiast</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello, I'm MN SIDDIK, a passionate developer skilled in Python, HTML, and JavaScript. I have a strong interest in building scalable web applications, automation tools, and AI solutions.</p>
+                    <p>With years of experience, I have worked on several projects that have helped me grow as a developer. I am always eager to learn new technologies and take on exciting challenges.</p>
+                </div>
+                <div class="about-image">
+                    <img id="profile-image" src="logo.jpg" alt="MN SIDDIK">
+                    <input type="file" id="file-input" accept="image/*" onchange="changeImage()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-item">
+                    <h3>Python</h3>
+                    <p>Experience in building web apps, automation, and data analysis.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>HTML & CSS</h3>
+                    <p>Strong knowledge of web design and front-end development.</p>
+                </div>
+                <div class="skill-item">
+                    <h3>JavaScript</h3>
+                    <p>Experience in developing dynamic and interactive web pages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-list">
+                <div class="project-card" onclick="showProjectDetails('Project 1', 'Description of Project 1.')">
+                    <h3>Project 1</h3>
+                    <p>Description of your project.</p>
+                </div>
+                <div class="project-card" onclick="showProjectDetails('Project 2', 'Description of Project 2.')">
+                    <h3>Project 2</h3>
+                    <p>Description of your project.</p>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MN SIDDIK. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
